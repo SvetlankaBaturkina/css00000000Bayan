@@ -117,3 +117,35 @@ body {
 .meme-button:hover {
     cursor: pointer;
 }
+
+#meme1:checked ~ .meme-button > .meme-image1,
+#meme2:checked ~ .meme-button > .meme-image2,
+#meme3:checked ~ .meme-button > .meme-image3,
+#meme4:checked ~ .meme-button > .meme-image4,
+#meme5:checked ~ .meme-button > .meme-image5 {
+    display: block;
+}
+
+#meme1:active ~ .meme-button > .meme-plus > .meme-title,
+#meme2:active ~ .meme-button > .meme-plus > .meme-title,
+#meme3:active ~ .meme-button > .meme-plus > .meme-title,
+#meme4:active ~ .meme-button > .meme-plus > .meme-title,
+#meme5:active ~ .meme-button > .meme-plus > .meme-title {
+    color: blue;
+}
+
+#meme1:active ~ .meme-button,
+#meme2:active ~ .meme-button,
+#meme3:active ~ .meme-button,
+#meme4:active ~ .meme-button,
+#meme5:active ~ .meme-button {
+    opacity: 0.5;
+}
+
+#meme1:checked ~ .meme-button > .meme-plus > .meme-title,
+#meme2:checked ~ .meme-button > .meme-plus > .meme-title,
+#meme3:checked ~ .meme-button > .meme-plus > .meme-title,
+#meme4:checked ~ .meme-button > .meme-plus > .meme-title,
+#meme5:checked ~ .meme-button > .meme-plus > .meme-title {
+    color: #000;
+}
